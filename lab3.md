@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     C[Customer] -->|HTTPS| LB[Azure Load Balancer]
 
@@ -10,3 +11,4 @@ flowchart TD
         FVM
         DBVM
     end
+``` 
