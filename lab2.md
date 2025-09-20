@@ -4,7 +4,7 @@
 
 ## IaaS Deployment
 
-In this setup, I used Infrastructure as a Service (IaaS) to deploy my system, which has three parts:
+In this setup, I used Infrastructure as a Service to deploy my system, which has three parts:
 - A React UI for the frontend <br>
 - A Flask web server for the backend<br>
 - A PostgreSQL database for data storage
@@ -60,7 +60,7 @@ flowchart TD
 --- 
 
 ## PaaS Deployment
-For this setup, I used Platform as a Service (PaaS) to deploy the same system:<br> 
+For this setup, I used Platform as a Service to deploy the same system:<br> 
 - React UI for the frontend<br>
 - Flask web server for the backend<br>
 - PostgreSQL database for data storage<br>
