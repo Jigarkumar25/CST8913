@@ -1,16 +1,12 @@
 flowchart TD
-    C[Customer] -->|HTTPS| LB[Azure Load Balancer / App Gateway]
+    C[Customer] -->|HTTPS| LB[Azure Load Balancer]
 
-    LB --> RVM[VM: React UI (Nginx/Apache)]
-    LB --> FVM[VM: Flask Backend (Gunicorn + Nginx)]
-    FVM --> DBVM[VM: PostgreSQL Database]
+    LB --> RVM[React UI VM]
+    LB --> FVM[Flask Backend VM]
+    FVM --> DBVM[PostgreSQL VM]
 
-    subgraph Azure VNet
+    subgraph VNet[Azure VNet]
         RVM
         FVM
         DBVM
     end
-
-    style DBVM fill:#fdd
-    style FVM fill:#dfd
-    style RVM fill:#ddf
